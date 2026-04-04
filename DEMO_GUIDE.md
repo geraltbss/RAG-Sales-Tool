@@ -11,7 +11,7 @@ This system uses Retrieval-Augmented Generation (RAG) to answer analytical quest
 | Language             | Python 3.13.12            | Course requirement                                     |
 | Vector Database      | ChromaDB                  | Simple, embedded, no server setup needed               |
 | Embedding Model      | all-MiniLM-L6-v2          | Fast, lightweight (90MB), good quality for short texts |
-| LLM                  | Mistral 7B via Ollama     | Runs locally on 6GB VRAM, strong analytical reasoning  |
+| LLM                  | Llama 3.2:3B via Ollama     | Runs locally on 6GB VRAM, strong analytical reasoning  |
 | UI                   | Gradio                    | Clean web interface, minimal code                      |
 
 ---

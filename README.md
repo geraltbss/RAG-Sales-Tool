@@ -12,7 +12,7 @@ pip install -r requirements.txt
 ### 2. Install and start Ollama
 Download from https://ollama.ai, then:
 ```bash
-ollama pull mistral
+ollama pull llama3.2:3b
 ```
 
 ### 3. Run the pipeline
@@ -48,7 +48,7 @@ python rag_pipeline.py "Which region has the best sales?"
 Superstore CSV
     - data_preparation.py (text chunks + aggregated summaries)
     - vector_store.py (ChromaDB + all-MiniLM-L6-v2 embeddings)
-    - rag_pipeline.py (hybrid retrieval + Mistral 7B via Ollama)
+    - rag_pipeline.py (hybrid retrieval + Llama 3.2:3B via Ollama)
     - Analytical answers
 ```
 
