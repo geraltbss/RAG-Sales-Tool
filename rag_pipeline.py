@@ -3,7 +3,7 @@ from vector_store import hybrid_search, format_context, search, search_by_type
 
 # Configuration
 
-OLLAMA_MODEL = "llama3.2:3b"
+OLLAMA_MODEL = "mistral"
 OLLAMA_BASE_URL = "http://localhost:11434"
 TOP_K = 10        
 MAX_CONTEXT = 6000 

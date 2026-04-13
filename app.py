@@ -55,9 +55,9 @@ EXAMPLE_QUERIES = [
     "Which months show the highest sales? Is there seasonality?",
     "Which product category generates the most revenue?",
     "What sub-categories have the highest profit margins?",
-    "Which region has the best sales performance?",
-    "Which cities are the top performers?",
-    "Compare Technology vs. Furniture sales trends.",
+    "Which region has the best sales performance? Compare all four regions",
+    "Which cities are the top performers of sales?",
+    "Compare Technology vs. Furniture sales trends over the years.",
     "How does the West region compare to the East in profit?",
 ]
 
@@ -91,7 +91,7 @@ def handle_query(question: str, history: list) -> tuple:
         return history, "", timing, meta
 
     except Exception as e:
-        error_msg = f" Error: {str(e)}\n\nMake sure Ollama is running (`ollama serve`) and the model is pulled (`ollama pull llama3.2:3b`)."
+        error_msg = f" Error: {str(e)}\n\nMake sure Ollama is running (`ollama serve`) and the model is pulled (`ollama pull mistral`)."
         history = history + [{"role": "assistant", "content": error_msg}]
         return history, "", "", ""
 
@@ -128,7 +128,7 @@ def create_app() -> gr.Blocks:
                 </div>
                 <div class="stat-card">
                     <div class="label">LLM</div>
-                    <div class="value">Llama3.2:3b</div>
+                    <div class="value">Mistral 7B</div>
                 </div>
             </div>
         """)
@@ -191,7 +191,7 @@ if __name__ == "__main__":
     app = create_app()
     app.launch(
         server_name="0.0.0.0",
-        server_port=7863,
+        server_port=7861,
         share=False,
         inbrowser=True,
         theme=gr.themes.Soft(
