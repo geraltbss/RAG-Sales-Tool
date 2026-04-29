@@ -55,7 +55,7 @@ app.py → Gradio web UI (chat interface, example queries, performance metrics)
 
 | Component | Technology | Purpose |
 |-----------|-----------|---------|
-| Language | Python 3.9+ | Core implementation |
+| Language | Python 3.13.12 | Core implementation |
 | Vector Database | ChromaDB | Embedded persistent vector storage with metadata filtering |
 | Embedding Model | all-MiniLM-L6-v2 | 384-dim sentence embeddings (90MB, fast, good quality) |
 | LLM | Mistral 7B | Local analytical response generation via Ollama |
