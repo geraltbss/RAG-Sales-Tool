@@ -100,8 +100,7 @@ def set_example(example: str) -> str:
     """Set an example query in the input box."""
     return example
 
-# Build the UI
-
+# UI
 def create_app() -> gr.Blocks:
     with gr.Blocks(
         title="RAG Sales Analyst",
@@ -133,14 +132,14 @@ def create_app() -> gr.Blocks:
             </div>
         """)
 
-        # Chat area
+        # Chat box
         chatbot = gr.Chatbot(
             label="Conversation",
             height=420,
             avatar_images=(None, "https://em-content.zobj.net/source/twitter/376/bar-chart_1f4ca.png"),
         )
 
-        # Input row
+        # Input
         with gr.Row():
             question_input = gr.Textbox(
                 placeholder="Ask a question about the sales data...",
@@ -150,7 +149,7 @@ def create_app() -> gr.Blocks:
             )
             submit_btn = gr.Button("Ask", variant="primary", scale=1)
 
-        # Metadata row
+        # Metadata
         with gr.Row():
             meta_display = gr.Textbox(label="Query Info", interactive=False, scale=3)
             timing_display = gr.Textbox(label="Performance", interactive=False, scale=2)
@@ -184,8 +183,6 @@ def create_app() -> gr.Blocks:
         question_input.submit(**submit_args)
 
     return app
-
-# Launch
 
 if __name__ == "__main__":
     app = create_app()

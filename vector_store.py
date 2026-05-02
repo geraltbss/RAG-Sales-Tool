@@ -177,7 +177,7 @@ def format_context(results: list[dict], max_chars: int = 6000) -> str:
 
     return "\n\n".join(context_parts)
 
-# Main: build the vector store
+# Main
 
 if __name__ == "__main__":
     import time

@@ -3,7 +3,7 @@ import time
 from rag_pipeline import query, classify_query
 
 QUERIES = [
-    # --- Trend Analysis ---
+    # Trend Analysis
     {
         "category": "Trend Analysis",
         "question": "What is the sales trend over the 4-year period? Has revenue been growing or declining?",
@@ -12,7 +12,7 @@ QUERIES = [
         "category": "Trend Analysis",
         "question": "Which months show the highest sales? Is there a clear seasonality pattern?",
     },
-    # --- Category Analysis ---
+    # Category Analysis
     {
         "category": "Category Analysis",
         "question": "Which product category generates the most revenue and which has the highest profit margin?",
@@ -21,7 +21,7 @@ QUERIES = [
         "category": "Category Analysis",
         "question": "What sub-categories have the highest profit margins and which ones are losing money?",
     },
-    # --- Regional Analysis ---
+    # Regional Analysis
     {
         "category": "Regional Analysis",
         "question": "Which region has the best sales performance? Compare all four regions.",
@@ -30,7 +30,7 @@ QUERIES = [
         "category": "Regional Analysis",
         "question": "Which cities are the top performers in terms of sales?",
     },
-    # --- Comparative Analysis ---
+    # Comparative Analysis
     {
         "category": "Comparative Analysis",
         "question": "Compare Technology vs. Furniture sales and profit trends over the years.",

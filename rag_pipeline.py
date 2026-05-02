@@ -33,8 +33,7 @@ def classify_query(query: str) -> list[str]:
 # Smart Retrieval
 
 def retrieve_context(query: str, top_k: int = TOP_K, max_chars: int = MAX_CONTEXT) -> str:
-    # Retrieve relevant context using hybrid search with query-aware boosting.
-    # Prioritizes summary documents for analytical queries.
+    # Retrieve relevant context using hybrid search with query-aware boosting. Prioritizes summary documents for analytical queries.
     query_types = classify_query(query)
 
     # Start with hybrid search

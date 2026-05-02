@@ -438,7 +438,7 @@ def create_statistical_summaries(df: pd.DataFrame) -> list[dict]:
     print(f"Created {len(docs)} statistical summaries")
     return docs
 
-# Main: run all preparation and save
+# Main
 
 def prepare_all(csv_path: str = "Sample - Superstore.csv", output_path: str = "prepared_chunks.json"):
     # Run full data preparation pipeline and save chunks to JSON.
